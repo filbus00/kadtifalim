@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+ 
+
+    <title> Azra soundboard.</title>
+
+       <script>
+      function play(str) {
+        console.log(str, "<== The string passed in")
+        var audio = document.getElementById(str);
+        audio.play();
+      }
+
+        window.document.onkeyup = function(event) {
+        let keystroke = event.key
+        if (keystroke === "q" || keystroke === "Q") {
+          play("Q");
+        } else if (keystroke === "w" || keystroke ==="W") {
+          play("W");
+        } else if (keystroke === "e" || keystroke ==="E") {
+          play("E");
+        } else if (keystroke === "s" || keystroke ==="S") {
+          play("S");
+        } else if (keystroke === "d" || keystroke ==="D") {
+          play("D");
+        } else if (keystroke === "z" || keystroke ==="Z") {
+          play("Z");
+        } else if (keystroke === "x" || keystroke ==="X") {
+          play("X");
+        } else if (keystroke === "c" || keystroke ==="C") {
+          play("W");
+        } else if (keystroke === "a" || keystroke ==="A") {
+          play("A");
+        }
+      } 
+    </script>
+
+  </head>
+  <body>
+    <div class="container" id="drum-machine">
+    <h1 id="title" class="text-center">Azra</h1>
+    <p id="description" class="text-center">Kad ti falim.</p>
+    <button class="drum-pad btn btn-block btn-primary" id="drum1" onclick="play('Q')">
+      Q
+      <audio src="./clip/azra.m4a" class="clip" id="Q">
+    </button>
+    <button class="drum-pad btn btn-block btn-primary" id="drum2" onclick="play('W')">W
+      <audio src="./clip/joj.m4a" class="clip" id="W">
+    </button>
+    <button class="drum-pad btn btn-block btn-primary" id="drum3" onclick="play('E')">E
+      <audio src="./clip/majmune.m4a" class="clip" id="E">
+    </button>
+    <button class="drum-pad btn btn-block btn-primary" id="drum4" onclick="play('A')">A
+      <audio src="./clip/mili.m4a" class="clip" id="A">
+   </button>
+    <button class="drum-pad btn btn-block btn-primary" id="drum5" onclick="play('S')">S
+      <audio src="./clip/neurozan.m4a" class="clip" id="S">
+    </button>
+    <button class="drum-pad btn btn-block btn-primary" id="drum6" onclick="play('D')">D
+      <audio src="./clip/sheitane.m4a" class="clip" id="D">
+    </button>
+    <button class="drum-pad btn btn-block btn-primary" id="drum7" onclick="play('Z')">Z
+      <audio src="./clip/slatkis.m4a" class="clip" id="Z">
+    </button>
+    <button class="drum-pad btn btn-block btn-primary" id="drum8" onclick="play('X')">X
+      <audio src="./clip/telo.m4a" class="clip" id="X">
+    </button>
+    <button class="drum-pad btn btn-block btn-primary" id="drum9" onclick="play('C')">C
+      <audio src="./clip/volim.m4a" class="clip" id="C">
+ </button>
+
+  </div>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
